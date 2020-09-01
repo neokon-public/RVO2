@@ -191,6 +191,17 @@ namespace RVO {
 						float timeHorizonObst, float radius, float maxSpeed,
 						const Vector2 &velocity = Vector2());
 
+        /**
+         * \brief      Temporarilty removes an agent from simulation by placing it outside
+         *             of the navigation area
+         */
+        void removeAgent(int index);
+
+        /**
+         * \brief      Removes all agents from simulation
+         */
+        void clearAgents();
+
 		/**
 		 * \brief      Adds a new obstacle to the simulation.
 		 * \param      vertices        List of the vertices of the polygonal
